@@ -20,7 +20,7 @@ struct Strap: ParsableCommand {
     mutating func run() throws {
         NSLog("[POGO] Spawned!")
         guard getuid() == 0 else { fatalError() }
-
+        
         if let input = input {
             NSLog("[POGO] Attempting to install \(input)")
             
@@ -112,7 +112,7 @@ struct Strap: ParsableCommand {
             do {
                 try FileManager.default.setAttributes(attributes, ofItemAtPath: "/var/jb/var/mobile")
             } catch {
-                NSLog("[POGO] thats wild")
+                NSLog("[POGO] failed to set attributes")
             }
         } else if remove {
             let active = "/private/preboot/active"
@@ -130,7 +130,6 @@ struct Strap: ParsableCommand {
             } catch {
                 NSLog("[POGO] Failed with error \(error.localizedDescription)")
             }
-            
         }
     }
     
