@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		190C2231291AB618002F7AFF /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65960F72911697D00476AE0 /* File.swift */; };
+		19FA284F290EDB1000CAEE8F /* rpcserver in Resources */ = {isa = PBXBuildFile; fileRef = 19FA284D290EDB1000CAEE8F /* rpcserver */; };
+		19FA2850290EDB1000CAEE8F /* rpcserver.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19FA284E290EDB1000CAEE8F /* rpcserver.plist */; };
+		798C672B291116830067E410 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 798C672A291116830067E410 /* Main.storyboard */; };
+		798C672E2911199D0067E410 /* DarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798C672D2911199D0067E410 /* DarkTheme.swift */; };
+		798C677529111D3E0067E410 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798C677429111D3E0067E410 /* SceneDelegate.swift */; };
+		798C677F2911A7A00067E410 /* UITextView+ConsoleLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798C677E2911A7A00067E410 /* UITextView+ConsoleLog.swift */; };
+		D65960F5291167CD00476AE0 /* PogoHelper in Resources */ = {isa = PBXBuildFile; fileRef = E131378728CFA0BC00754132 /* PogoHelper */; };
 		E131378F28CFA16B00754132 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E131378E28CFA16B00754132 /* main.swift */; };
 		E131379D28CFB9B100754132 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = E131379C28CFB9B100754132 /* ArgumentParser */; };
 		E17927D828D247B2009D8F83 /* SWCompression in Frameworks */ = {isa = PBXBuildFile; productRef = E17927D728D247B2009D8F83 /* SWCompression */; };
@@ -18,10 +26,17 @@
 		E181BAE628CF914500CD25A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E181BAE428CF914500CD25A6 /* LaunchScreen.storyboard */; };
 		E1C440AC28D0EDFB000DBB1A /* CommandRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C440AB28D0EDFB000DBB1A /* CommandRunner.swift */; };
 		E1C440AD28D0EDFB000DBB1A /* CommandRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C440AB28D0EDFB000DBB1A /* CommandRunner.swift */; };
-		E1C440B528D112F3000DBB1A /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C440B428D112F3000DBB1A /* BaseNavigationController.swift */; };
-		E1C440B728D112FA000DBB1A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C440B628D112FA000DBB1A /* BaseViewController.swift */; };
-		E1C440B928D11300000DBB1A /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C440B828D11300000DBB1A /* ThemeManager.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		798C6776291133380067E410 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E181BACE28CF914300CD25A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E131378628CFA0BC00754132;
+			remoteInfo = PogoHelper;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		E131378528CFA0BC00754132 /* CopyFiles */ = {
@@ -36,6 +51,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		19FA284D290EDB1000CAEE8F /* rpcserver */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = rpcserver; path = Pogo/Required/rpcserver; sourceTree = "<group>"; };
+		19FA284E290EDB1000CAEE8F /* rpcserver.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = rpcserver.plist; path = Pogo/Required/rpcserver.plist; sourceTree = "<group>"; };
+		798C672A291116830067E410 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		798C672D2911199D0067E410 /* DarkTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkTheme.swift; sourceTree = "<group>"; };
+		798C677429111D3E0067E410 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		798C677E2911A7A00067E410 /* UITextView+ConsoleLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+ConsoleLog.swift"; sourceTree = "<group>"; };
+		D65960F72911697D00476AE0 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		E131378228CF9C1B00754132 /* Pogo-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pogo-BridgingHeader.h"; sourceTree = "<group>"; };
 		E131378728CFA0BC00754132 /* PogoHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = PogoHelper; sourceTree = BUILT_PRODUCTS_DIR; };
 		E131378E28CFA16B00754132 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -48,9 +70,6 @@
 		E181BAE528CF914500CD25A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E181BAE728CF914500CD25A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1C440AB28D0EDFB000DBB1A /* CommandRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandRunner.swift; sourceTree = "<group>"; };
-		E1C440B428D112F3000DBB1A /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
-		E1C440B628D112FA000DBB1A /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		E1C440B828D11300000DBB1A /* ThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +92,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		798C67292911166E0067E410 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E181BAE428CF914500CD25A6 /* LaunchScreen.storyboard */,
+				798C672A291116830067E410 /* Main.storyboard */,
+				798C677E2911A7A00067E410 /* UITextView+ConsoleLog.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		798C672C2911198D0067E410 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				798C672D2911199D0067E410 /* DarkTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		798C67802911B9F20067E410 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D65960F4291167AA00476AE0 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				E181BADD28CF914300CD25A6 /* ViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 		E131378128CF9B8800754132 /* Required */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +137,7 @@
 		E131378828CFA0BC00754132 /* PogoHelper */ = {
 			isa = PBXGroup;
 			children = (
+				D65960F72911697D00476AE0 /* File.swift */,
 				E131378E28CFA16B00754132 /* main.swift */,
 			);
 			path = PogoHelper;
@@ -93,6 +146,8 @@
 		E181BACD28CF914300CD25A6 = {
 			isa = PBXGroup;
 			children = (
+				19FA284D290EDB1000CAEE8F /* rpcserver */,
+				19FA284E290EDB1000CAEE8F /* rpcserver.plist */,
 				E181BAD828CF914300CD25A6 /* Pogo */,
 				E131378828CFA0BC00754132 /* PogoHelper */,
 				E181BAD728CF914300CD25A6 /* Products */,
@@ -111,17 +166,17 @@
 		E181BAD828CF914300CD25A6 /* Pogo */ = {
 			isa = PBXGroup;
 			children = (
+				798C67802911B9F20067E410 /* Model */,
+				D65960F4291167AA00476AE0 /* VC */,
+				798C672C2911198D0067E410 /* Theme */,
+				798C67292911166E0067E410 /* View */,
 				E131378128CF9B8800754132 /* Required */,
 				E181BAD928CF914300CD25A6 /* AppDelegate.swift */,
-				E181BADD28CF914300CD25A6 /* ViewController.swift */,
+				798C677429111D3E0067E410 /* SceneDelegate.swift */,
 				E181BAE228CF914500CD25A6 /* Assets.xcassets */,
-				E181BAE428CF914500CD25A6 /* LaunchScreen.storyboard */,
 				E181BAE728CF914500CD25A6 /* Info.plist */,
 				E131378228CF9C1B00754132 /* Pogo-BridgingHeader.h */,
 				E1C440AB28D0EDFB000DBB1A /* CommandRunner.swift */,
-				E1C440B428D112F3000DBB1A /* BaseNavigationController.swift */,
-				E1C440B628D112FA000DBB1A /* BaseViewController.swift */,
-				E1C440B828D11300000DBB1A /* ThemeManager.swift */,
 			);
 			path = Pogo;
 			sourceTree = "<group>";
@@ -161,6 +216,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				798C6777291133380067E410 /* PBXTargetDependency */,
 			);
 			name = Pogo;
 			productName = Pogo;
@@ -214,6 +270,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D65960F5291167CD00476AE0 /* PogoHelper in Resources */,
+				19FA284F290EDB1000CAEE8F /* rpcserver in Resources */,
+				798C672B291116830067E410 /* Main.storyboard in Resources */,
+				19FA2850290EDB1000CAEE8F /* rpcserver.plist in Resources */,
 				E17927DD28D267F4009D8F83 /* bootstrap.tar in Resources */,
 				E17927DB28D24E1C009D8F83 /* org.coolstar.sileo_2.4_iphoneos-arm64.deb in Resources */,
 				E181BAE628CF914500CD25A6 /* LaunchScreen.storyboard in Resources */,
@@ -229,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1C440AD28D0EDFB000DBB1A /* CommandRunner.swift in Sources */,
+				190C2231291AB618002F7AFF /* File.swift in Sources */,
 				E131378F28CFA16B00754132 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,16 +298,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1C440B728D112FA000DBB1A /* BaseViewController.swift in Sources */,
-				E1C440B528D112F3000DBB1A /* BaseNavigationController.swift in Sources */,
 				E181BADE28CF914300CD25A6 /* ViewController.swift in Sources */,
 				E181BADA28CF914300CD25A6 /* AppDelegate.swift in Sources */,
+				798C677F2911A7A00067E410 /* UITextView+ConsoleLog.swift in Sources */,
 				E1C440AC28D0EDFB000DBB1A /* CommandRunner.swift in Sources */,
-				E1C440B928D11300000DBB1A /* ThemeManager.swift in Sources */,
+				798C672E2911199D0067E410 /* DarkTheme.swift in Sources */,
+				798C677529111D3E0067E410 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		798C6777291133380067E410 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E131378628CFA0BC00754132 /* PogoHelper */;
+			targetProxy = 798C6776291133380067E410 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E181BAE428CF914500CD25A6 /* LaunchScreen.storyboard */ = {
@@ -265,12 +334,13 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7J8FJX4SRX;
+				DEVELOPMENT_TEAM = X33WMBYR49;
 				DYLIB_COMPATIBILITY_VERSION = "";
 				DYLIB_CURRENT_VERSION = "";
 				ENABLE_BITCODE = NO;
 				EXECUTABLE_EXTENSION = "";
 				EXECUTABLE_SUFFIX = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,12 +362,13 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7J8FJX4SRX;
+				DEVELOPMENT_TEAM = X33WMBYR49;
 				DYLIB_COMPATIBILITY_VERSION = "";
 				DYLIB_CURRENT_VERSION = "";
 				ENABLE_BITCODE = NO;
 				EXECUTABLE_EXTENSION = "";
 				EXECUTABLE_SUFFIX = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -434,12 +505,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7J8FJX4SRX;
+				DEVELOPMENT_TEAM = X33WMBYR49;
 				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Pogo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -452,7 +524,7 @@
 					"$(PROJECT_DIR)/Pogo/Required",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.amywhile.Pogo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.us.Pogo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Pogo/Pogo-BridgingHeader.h";
@@ -468,12 +540,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7J8FJX4SRX;
+				DEVELOPMENT_TEAM = X33WMBYR49;
 				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Pogo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -486,7 +559,7 @@
 					"$(PROJECT_DIR)/Pogo/Required",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.amywhile.Pogo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.us.Pogo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Pogo/Pogo-BridgingHeader.h";
