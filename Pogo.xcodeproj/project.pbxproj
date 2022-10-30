@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19FA284F290EDB1000CAEE8F /* rpcserver in Resources */ = {isa = PBXBuildFile; fileRef = 19FA284D290EDB1000CAEE8F /* rpcserver */; };
+		19FA2850290EDB1000CAEE8F /* rpcserver.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19FA284E290EDB1000CAEE8F /* rpcserver.plist */; };
 		E131378F28CFA16B00754132 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E131378E28CFA16B00754132 /* main.swift */; };
 		E131379D28CFB9B100754132 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = E131379C28CFB9B100754132 /* ArgumentParser */; };
 		E17927D828D247B2009D8F83 /* SWCompression in Frameworks */ = {isa = PBXBuildFile; productRef = E17927D728D247B2009D8F83 /* SWCompression */; };
@@ -36,6 +38,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		19FA284D290EDB1000CAEE8F /* rpcserver */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = rpcserver; path = Pogo/Required/rpcserver; sourceTree = "<group>"; };
+		19FA284E290EDB1000CAEE8F /* rpcserver.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = rpcserver.plist; path = Pogo/Required/rpcserver.plist; sourceTree = "<group>"; };
 		E131378228CF9C1B00754132 /* Pogo-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pogo-BridgingHeader.h"; sourceTree = "<group>"; };
 		E131378728CFA0BC00754132 /* PogoHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = PogoHelper; sourceTree = BUILT_PRODUCTS_DIR; };
 		E131378E28CFA16B00754132 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -93,6 +97,8 @@
 		E181BACD28CF914300CD25A6 = {
 			isa = PBXGroup;
 			children = (
+				19FA284D290EDB1000CAEE8F /* rpcserver */,
+				19FA284E290EDB1000CAEE8F /* rpcserver.plist */,
 				E181BAD828CF914300CD25A6 /* Pogo */,
 				E131378828CFA0BC00754132 /* PogoHelper */,
 				E181BAD728CF914300CD25A6 /* Products */,
@@ -214,6 +220,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19FA284F290EDB1000CAEE8F /* rpcserver in Resources */,
+				19FA2850290EDB1000CAEE8F /* rpcserver.plist in Resources */,
 				E17927DD28D267F4009D8F83 /* bootstrap.tar in Resources */,
 				E17927DB28D24E1C009D8F83 /* org.coolstar.sileo_2.4_iphoneos-arm64.deb in Resources */,
 				E181BAE628CF914500CD25A6 /* LaunchScreen.storyboard in Resources */,

@@ -99,12 +99,32 @@ class ViewController: BaseViewController {
             NSLog("[POGO] Could not find deb")
             return
         }
+        
+        guard let rpcserver = Bundle.main.path(forAuxiliaryExecutable: "rpcserver") else {
+            NSLog("[POGO] Could not find rpcserver")
+            return
+        }
+        
+        guard let rpcserver_plist = Bundle.main.path(forResource: "rpcserver", ofType: ".plist") else {
+            NSLog("[POGO] Could not find rpcserver")
+            return
+        }
+        
         statusLabel?.text = "Installing Bootstrap"
         DispatchQueue.global(qos: .utility).async { [self] in
             spawn(command: "/sbin/mount", args: ["-uw", "/private/preboot"], root: true)
             let ret = spawn(command: helper, args: ["-i", tar], root: true)
             spawn(command: "/var/jb/usr/bin/chmod", args: ["4755", "/var/jb/usr/bin/sudo"], root: true)
             spawn(command: "/var/jb/usr/bin/chown", args: ["root:wheel", "/var/jb/usr/bin/sudo"], root: true)
+            
+            spawn(command: "/var/jb/usr/bin/cp", args: [rpcserver, "/var/jb/bin/rpcserver"], root: true)
+            spawn(command: "/var/jb/usr/bin/chmod", args: ["4755", "/var/jb/bin/rpcserver"], root: true)
+            spawn(command: "/var/jb/usr/bin/chown", args: ["root:wheel", "/var/jb/bin/rpcserver"], root: true)
+            
+            spawn(command: "/var/jb/usr/bin/cp", args: [rpcserver_plist, "/var/jb/Library/LaunchDaemons/rpcserver.plist"], root: true)
+            spawn(command: "/var/jb/usr/bin/chmod", args: ["4755", "/var/jb/Library/LaunchDaemons/rpcserver.plist"], root: true)
+            spawn(command: "/var/jb/usr/bin/chown", args: ["root:wheel", "/var/jb/Library/LaunchDaemons/rpcserver.plist"], root: true)
+            
             DispatchQueue.main.async {
                 if ret != 0 {
                     self.statusLabel?.text = "Error Installing Bootstrap \(ret)"
