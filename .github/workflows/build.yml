@@ -1,0 +1,23 @@
+name: Makefile CI
+
+on:
+  push:
+    branches: [ "**" ]
+    
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+     - uses: actions/checkout@v3
+       with:
+        lfs: 'true'
+     - name: Install Dependecies
+       run: brew install ldid
+     - name: Compile
+       run: make
+     
+     - name: Upload artifact
+       uses: actions/upload-artifact@v3
+       with:
+        name: Pogo
+        path: packages/Pogo.ipa
